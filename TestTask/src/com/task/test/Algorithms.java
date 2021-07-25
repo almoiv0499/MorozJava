@@ -1,10 +1,11 @@
 package com.task.test;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Algorithms {
-    
+
     private static final int ARRAY_SIZE = 10;
     private static final int ARRAY_VALUE_FROM = 10;
     private static final int ARRAY_VALUE_TO = 100;
@@ -13,20 +14,21 @@ public class Algorithms {
     private static final String SPACE_STRING = " ";
 
     public static void main(String[] args) {
-        
-        //task ¹1
+
+        // task ¹1
         int digit = scannerInt();
         algoritmFirstTask(digit);
 
-        //task ¹2
+        // task ¹2
         String string = scannerLine();
         algoritmSecondTask(string);
 
         System.out.println();
 
-        //task ¹3
+        // task ¹3
         int[] array = new Random().ints(ARRAY_SIZE, ARRAY_VALUE_FROM, ARRAY_VALUE_TO).toArray();
-        Arrays.stream(array).filter(value -> value % DIVISOR == 0).forEach(value -> System.out.print(value + SPACE_STRING));
+        Arrays.stream(array).filter(value -> value % DIVISOR == 0)
+                .forEach(value -> System.out.print(value + SPACE_STRING));
     }
 
     private static void algoritmFirstTask(int digit) {
