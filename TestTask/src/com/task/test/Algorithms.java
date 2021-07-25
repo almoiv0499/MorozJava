@@ -31,15 +31,15 @@ public class Algorithms {
 
     private static void algoritmFirstTask(int digit) {
         if (digit > TASK_CONDITION) {
-            System.out.println("Привет");
+            System.out.println("Hello");
         }
     }
 
     private static void algoritmSecondTask(String string) {
-        if (string.equals("Вячеслав")) {
-            System.out.println("Привет, Вячеслав");
+        if (string.equals("Vyacheslav")) {
+            System.out.println("Hello, Vyacheslav");
         } else {
-            System.out.println("Нет такого имени");
+            System.out.println("No such name");
         }
     }
 
